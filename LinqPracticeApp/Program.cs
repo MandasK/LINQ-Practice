@@ -130,6 +130,25 @@ namespace LinqPracticeApp
             Console.WriteLine();
             Console.WriteLine("Show me how rich I am");
             Console.WriteLine($"You got ${purchaseSum}");
+
+            // What is our most expensive product?
+            List<double> prices = new List<double>()
+            {
+                879.45,
+                9442.85,
+                2454.63,
+                45.65,
+                2340.29,
+                34.03,
+                4786.45,
+                745.31,
+                21.76
+            };
+            double mostExpensive = prices.Max();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Show me how expensive");
+            Console.WriteLine($"Most expensive item ${mostExpensive}");
         }
     }
 }
