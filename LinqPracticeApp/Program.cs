@@ -86,6 +86,31 @@ namespace LinqPracticeApp
             Console.WriteLine();
             Console.WriteLine("Show me some names in Reverse Alphabet!");
             descend.ForEach(name => Console.WriteLine($"{name}"));
+
+            // Build a collection of these numbers sorted in ascending order
+            List<int> numbersAgain = new List<int>()
+            {
+                15,
+                8,
+                21,
+                24,
+                32,
+                13,
+                30,
+                12,
+                7,
+                54,
+                48,
+                4,
+                49,
+                96
+            };
+
+            List<int> ascend = numbersAgain.OrderBy(num => num).ToList();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Show me some numbers in order from Smallest to BIGGEST!");
+            ascend.ForEach(num => Console.WriteLine($"{num}"));
         }
     }
 }
