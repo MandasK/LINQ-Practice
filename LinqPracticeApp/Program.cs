@@ -111,6 +111,25 @@ namespace LinqPracticeApp
             Console.WriteLine();
             Console.WriteLine("Show me some numbers in order from Smallest to BIGGEST!");
             ascend.ForEach(num => Console.WriteLine($"{num}"));
+
+            // How much money have we made?
+            List<double> purchases = new List<double>()
+            {
+                2340.29,
+                745.31,
+                21.76,
+                34.03,
+                4786.45,
+                879.45,
+                9442.85,
+                2454.63,
+                45.65
+            };
+            double purchaseSum = purchases.Sum();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Show me how rich I am");
+            Console.WriteLine($"You got ${purchaseSum}");
         }
     }
 }
